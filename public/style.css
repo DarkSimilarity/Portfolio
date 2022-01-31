@@ -662,6 +662,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.5rem;
 }
 
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1476,6 +1480,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pr-0{
     padding-right: 0px;
+  }
+
+  .md\:pt-10{
+    padding-top: 2.5rem;
   }
 
   .md\:text-7xl{
