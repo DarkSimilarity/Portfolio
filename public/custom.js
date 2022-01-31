@@ -179,11 +179,11 @@ function App(conf) {
     element.addEventListener("scroll", (event) => {
         const ih = window.innerHeight
         const av = 100
-        const sp = element.scrollTop - av
+        const sp = element.scrollTop
 
         console.log(ih, sp)
 
-        if (sp == 0 - av) {
+        if (ih > sp) {
             conf.light1Color = "#ab32b3"
             conf.light2Color = "#888132"
             conf.light3Color = "#7c07f9"
@@ -194,7 +194,7 @@ function App(conf) {
             light4.color = new THREE.Color(conf.light4Color);
         }
 
-        if (sp == ih - av) {
+        if (sp >= ih - av) {
             conf.light1Color = "#7b06b8"
             conf.light2Color = "#407c79"
             conf.light3Color = "#3e8057"
@@ -205,7 +205,7 @@ function App(conf) {
             light4.color = new THREE.Color(conf.light4Color);
         }
 
-        if (sp == ih * 2 - av) {
+        if (sp >= ih * 2 - av) {
             conf.light1Color = "#8bf760"
             conf.light2Color = "#d1221d"
             conf.light3Color = "#363c34"
@@ -216,7 +216,7 @@ function App(conf) {
             light4.color = new THREE.Color(conf.light4Color);
         }
 
-        if (sp == ih * 3 - av) {
+        if (sp >= ih * 3 - av) {
             conf.light1Color = "#200454"
             conf.light2Color = "#5b720b"
             conf.light3Color = "#1f927f"
