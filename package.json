@@ -1,0 +1,26 @@
+{
+  "name": "darksimilarity-portfolio",
+  "version": "1.0.0",
+  "description": "DarkSimilarity's Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "tcss": "npx tailwindcss -i ./src/tailwind.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkSimilarity/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "darksimilarity"
+  ],
+  "author": "DarkSimilarity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarkSimilarity/Portfolio/issues"
+  },
+  "homepage": "https://github.com/DarkSimilarity/Portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.18"
+  }
+}
