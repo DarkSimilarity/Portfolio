@@ -181,8 +181,6 @@ function App(conf) {
         const av = 100
         const sp = element.scrollTop
 
-        console.log(ih, sp)
-
         if (ih > sp) {
             conf.light1Color = "#ab32b3"
             conf.light2Color = "#888132"
