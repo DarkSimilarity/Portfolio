@@ -4,7 +4,7 @@
   "description": "DarkSimilarity's Portfolio",
   "main": "index.html",
   "scripts": {
-    "tcss": "npx tailwindcss -i ./src/tailwind.css -o ./public/style.css --watch"
+    "tcss": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --watch"
   },
   "repository": {
     "type": "git",
