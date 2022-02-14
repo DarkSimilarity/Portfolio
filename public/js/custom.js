@@ -180,6 +180,7 @@ function App(conf) {
         const ih = window.innerHeight
         const av = 100
         const sp = element.scrollTop
+        const icon = document.getElementById('svg')
 
         if (ih > sp) {
             conf.light1Color = "#ab32b3"
@@ -190,6 +191,8 @@ function App(conf) {
             light2.color = new THREE.Color(conf.light2Color);
             light3.color = new THREE.Color(conf.light3Color);
             light4.color = new THREE.Color(conf.light4Color);
+
+            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#ab32b3] to-[#4257b6]')
         }
 
         if (sp >= ih - av) {
@@ -201,6 +204,8 @@ function App(conf) {
             light2.color = new THREE.Color(conf.light2Color);
             light3.color = new THREE.Color(conf.light3Color);
             light4.color = new THREE.Color(conf.light4Color);
+
+            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#8E54E9] to-[#4776E6]')
         }
 
         if (sp >= ih * 2 - av) {
@@ -212,6 +217,8 @@ function App(conf) {
             light2.color = new THREE.Color(conf.light2Color);
             light3.color = new THREE.Color(conf.light3Color);
             light4.color = new THREE.Color(conf.light4Color);
+
+            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#ff9966] to-[#ff5e62]')
         }
 
         if (sp >= ih * 3 - av) {
@@ -223,6 +230,8 @@ function App(conf) {
             light2.color = new THREE.Color(conf.light2Color);
             light3.color = new THREE.Color(conf.light3Color);
             light4.color = new THREE.Color(conf.light4Color);
+
+            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#67B26F] to-[#4ca2cd]')
         }
     });
 }
