@@ -1,3 +1,11 @@
+var loading_screen = pleaseWait({
+    backgroundColor: '#1abc9c',
+    loadingHtml: '<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>'
+});
+
+setTimeout(loading_screen.finish(), 1000)
+
+
 App({
     el: 'background'
 });
@@ -222,6 +230,19 @@ function App(conf) {
         }
 
         if (sp >= ih * 3 - av) {
+            conf.light1Color = "#9c1000"
+            conf.light2Color = "#d11f4c"
+            conf.light3Color = "#e711ac"
+            conf.light4Color = "#cdaf12"
+            light1.color = new THREE.Color(conf.light1Color);
+            light2.color = new THREE.Color(conf.light2Color);
+            light3.color = new THREE.Color(conf.light3Color);
+            light4.color = new THREE.Color(conf.light4Color);
+
+            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#9c1000] to-[#d11f4c]')
+        }
+
+        if (sp >= ih * 4 - av) {
             conf.light1Color = "#200454"
             conf.light2Color = "#5b720b"
             conf.light3Color = "#1f927f"
