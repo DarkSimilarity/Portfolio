@@ -29,7 +29,7 @@ function App(conf) {
         cameraZ: 100, //75,
         xyCoef: 50,
         zCoef: 4, //10,
-        lightIntensity: 0.5,
+        lightIntensity: 0.4,
         ambientColor: 0xab32b3,
         light1Color: 0x212121, //0x7b06b8,
         light2Color: 0x6C757D, //0x407c79,
