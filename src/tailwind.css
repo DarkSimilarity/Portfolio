@@ -94,11 +94,11 @@
 	}
 
 	.pg-loading-logo-header {
-		display: none
+		display: none;
 	}
 
 	.bg-split {
-			background-image: linear-gradient(to right, #101010, #101010 50%, #212121 50%);
+			background-image: linear-gradient(to right, #101010, #101010 50%, #1a1a1a 50%);
 			background-attachment:fixed;
 			background-repeat: no-repeat;
 	}

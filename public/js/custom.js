@@ -1,9 +1,26 @@
 var loading_screen = pleaseWait({
+    logo: "icons/icon.png",
     backgroundColor: '#101010',
     loadingHtml: '<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>'
 });
 
 setTimeout(loading_screen.finish(), 0)
+
+resize(0)
+
+window.addEventListener("resize", () => {
+    resize()
+});
+
+function resize() {
+    if (window.innerWidth > 900) {
+        window.addEventListener('mousemove', mousemove);
+    } else {
+        window.removeEventListener('mousemove', mousemove);
+        document.getElementById('lcol').style.transform = `translateX(${0}px) translateY(${0}px)`;
+        document.getElementById('rcol').style.transform = `translateX(${0}px) translateY(${0}px)`;
+    }
+}
 
 options = {
     "cursorOuter": "circle-basic",
@@ -17,7 +34,40 @@ magicMouse(options);
 
 //document.getElementById('astro').addEventListener('click', e => {window.location = 'https://astroweather-darksimilarity.netlify.app/'})
 
+function mousemove(event) {
+    //console.log("pageX: ",event.pageX, "pageY: ", event.pageY, "clientX: ", event.clientX, "clientY:", event.clientY)
+    if (window.innerWidth > 1600) {
+        var position = 1
+    } else {
+        position = 0.6
+    }
 
+    var lcol = document.getElementById('lcol')
+    var rcol = document.getElementById('rcol')
+    var mouse = document.getElementById('magicPointer')
+
+    if (event.pageX < document.body.clientWidth / 2) {
+        rcol.style.transform = `translateX(${0}px) translateY(${0}px)`;
+
+        const x = ((window.innerWidth - event.pageX * position) / 90) - 7;
+        const y = ((window.innerHeight - event.pageY * position) / 90) - 4;
+
+        console.log(x, y)
+
+        lcol.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        mouse.style.background = 'white'
+    } else {
+        lcol.style.transform = `translateX(${0}px) translateY(${0}px)`;
+
+        const x = ((window.innerWidth + event.pageX * position) / 100) - 27;
+        const y = ((window.innerHeight + event.pageY * position) / 100) - 15;
+
+        console.log(window.innerHeight, event.pageY, position, y)
+
+        rcol.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        mouse.style.background = 'rgb(59 130 246)'
+    }
+}
 
 App({
     el: 'background'
