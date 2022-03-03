@@ -15,184 +15,125 @@
     <script src="js/mixpanel.js"></script>
 </head>
 
-<body class="bg-dark overflow-y-hidden overflow-x-hidden">
-    <div class="inner">
-        <div id="main"
-            class="absolute left-0 top-0 w-[100vw] max-h-screen snap snap-y overflow-x-hidden snap-mandatory block z-10 overflow-y-scroll">
-            <div class="hidden">
-                <form style="width: 80%; margin: 0 auto;">
-                    <div class="form-row">
-                        <div class="form-group col-sm-6">
-                            <label for="noiseInput" class="form-label">Noise Coef</label>
-                            <input type="range" min="1" max="100" class="custom-range" id="noiseInput">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="heightInput" class="form-label">Height Coef</label>
-                            <input type="range" min="1" max="100" class="custom-range" id="heightInput">
-                        </div>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <a href="#" id="trigger" class="btn btn-sm btn-secondary">Random Colors</a>
-                    </div>
-                </form>
-            </div>
+<body class="md:bg-split bg-black text-light overflow-x-hidden">
+    <div class="inner w-screen max-h-screen absolute z-10">
+        <div id="main" class="w-screen md:max-w-[1440px] mx-auto flex flex-col md:flex-row">
+            <div class="md:w-1/2 md:p-16 p-8">
+                <div class="mb-5">
+                    <img src="icons/icon.png" class="w-12 h-12 cursor-pointer" onclick="window.location.reload()">
+                    </img>
+                </div>
 
-            <div class="w-full h-screen snap-start flex justify-left">
-                <div class="m-auto md:w-6/12 md:p-0 p-10 pt-0 text-left text-zinc-50 max-w-3xl">
-                    <div>
-                        <div class="glitch text-4xl md:text-7xl">
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
-                            <div class="line">Hey, I’m DarkSimilarity</div>
+                <div class="mb-10">
+                    <span class="text-blue-400">Hey, my name is</span>
+                    <h1 class="md:text-5xl text-4xl font-bold mb-4">DarkSimliarity</h1>
+                    <p class="text-neutral-500 text-sm mb-4">I’m a web developer and UX architect. My
+                        superpower?
+                        I create digital magic. Although I have been programming for over 6 years, I mostly
+                        created personal projects so now I'm focusing on creating portfolio projects.</p>
+                    <p class="text-neutral-500 text-sm">Besides programming, I am also a web designer. I
+                        mainly create modern designs, ones that keep up with today's standards
+                        and look visually appealing while also providing function.</p>
+                </div>
+                <div class="mb-10">
+                    <h2 class="text-2xl font-medium mb-5">My Skills</h2>
+                    <div class="grid grid-cols-2 gap-4 max-w-xs text-neutral-500">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>APIs</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>TailwindCSS</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>NodeJS</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>Netlify</span>
                         </div>
                     </div>
-                    <p class="mt-4">I’m a web developer and UX architect. My superpower? I create digital magic. </p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-medium mb-5">Skills in Progress</h2>
+                    <div class="grid grid-cols-2 gap-4 max-w-xs text-neutral-500">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>React</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>Moralis</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-screen snap-start flex justify-left">
-                <div class="m-auto md:w-6/12 md:p-0 p-10 pt-0 text-left text-zinc-50 max-w-2xl">
-                    <h1 class="text-blue-500 text-4xl md:text-4xl font-bold 0 border-b-4 pb-3 w-[200px]">About Me</h1>
-                    <p class="mt-4 md:text-base text-sm">Hey there, I’m DarkSimilarity (not my real name) and I enjoy
-                        creating digital magic. My
-                        journey started all the way back in 2016 when I tried to clone the PlayStation website. Although
-                        it
-                        has been many years, I’ve mostly created personal projects. Currently I’m studying computer
-                        science
-                        in Australia and working on building my career as a software engineer.</p>
-                </div>
-            </div>
-            <div class="w-full h-screen snap-start flex justify-left">
-                <div class="m-auto md:w-6/12 md:p-0 p-10 pt-0 text-left text-zinc-50 max-w-2xl">
-                    <h1 class="text-orange-500 text-4xl md:text-4xl font-bold 0 border-b-4 pb-3 w-[250px]">My Experience
-                    </h1>
-                    <p class="mt-4 md:text-base text-sm">Throughtout my journey I’ve learn quite a lot. I’ve worked with
-                        APIs, Node and even
-                        creating desktop applications with <a href="https://nwjs.io/" target="_blank"
-                            class="text-green-400">NW.js</a>. I understand website through actually creating great
-                        looking websites. My goto CSS framework is <a href="https://tailwindcss.com/" target="_blank"
-                            class="text-blue-400">Tailwind</a> but I can also use <a href="https://getbootstrap.com/"
-                            target="_blank" class="text-purple-400">Bootstrap</a> or even create
-                        custom styles when necessary.<br><br>
-
-                        Ofcourse programming is a never-ending journey and you learn more and more everyday. These days
-                        I’m
-                        learning to create Web 3 applications using <a href="https://moralis.io/" target="_blank"
-                            class="text-cyan-400">Moralis</a> and expanding my public portfolio.</p>
-                </div>
-            </div>
-            <div class="w-full h-screen snap-start flex justify-left">
-                <div class="m-auto md:w-6/12 md:p-0 p-10 pt-0 text-left text-zinc-50 max-w-2xl">
-                    <h1 class="text-red-500 text-4xl md:text-4xl font-bold border-b-4 pb-3 w-[250px]">Projects
-                    </h1>
-                    <a href="https://astroweather-darksimilarity.netlify.app/" target="_blank">
-                        <div class="md:w-[400px] w-full bg-neutral-800 hover:bg-neutral-900 flex p-5 rounded-xl mt-4">
-                            <img src="icons/AstroWeather.png" alt="" width="50" height="50">
-                            <div class="my-auto ml-4">
-                                <p class="font-bold text-lg">AstroWeather</p>
-                            </div>
+            <div class="md:w-1/2 md:p-16 p-8">
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-2xl font-medium mb-5">Projects</h2>
+                    <a href="https://astroweather-darksimilarity.netlify.app/" target="_blank" class="cursor-none bg-dark w-full p-5 hover:bg-[#212121] rounded-xl transition hover:scale-105 border-transparent border-2 hover:border-blue-500">
+                        <h3 class="text-2xl mb-2">AstroWeather</h3>
+                        <p class="text-neutral-500 text-xs">AstroWeather is my first public project. It’s a
+                            web weather app built using
+                            Tailwind CSS and makes use of a weather api for data. The app is mobile-friendly
+                            and supports both Celsius and Fahrenheit aswell as kph and mph.</p>
+                        <div class="flex flex-grow gap-2 mt-4">
+                            <div class="bg-blue-500 py-1 px-2 text-sm rounded-md">TailwindCSS</div>
+                            <div class="bg-yellow-500 text-dark py-1 px-2 text-sm rounded-md">JavaScript</div>
+                            <div class="bg-fuchsia-500 text-dark py-1 px-2 text-sm rounded-md">API</div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="w-full h-screen snap-start flex justify-left ">
-                <div class="m-auto md:w-6/12 md:p-0 p-10 pt-0 text-left text-zinc-50 max-w-2xl">
-                    <h1 class="text-green-500 text-4xl md:text-4xl font-bold 0 border-b-4 pb-3 w-[200px]">Contact Me
-                    </h1>
-                    <p class="mt-4 md:text-base text-sm">Feel free to contact me through <a
-                            href="https://www.instagram.com/darksimilarity/" target="_blank"
-                            class="text-fuchsia-500">Instagram</a>, <a href="https://www.instagram.com/darksimilarity/"
-                            target="_blank" class="text-orange-500">Linkedln</a> and <a
-                            href="https://www.instagram.com/darksimilarity/" target="_blank"
-                            class="text-blue-500">Twitter</a>. <br>I am happy to work on
-                        any project within my capabilities. </p>
-                </div>
-            </div>
         </div>
-
-        <div class="flex fixed md:left-auto left-5 md:block gap-4 md:gap-0 z-20">
-            <div class="md:fixed top-0 md:pt-10 pt-5 md:left-10">
-                <svg id="svg" class="w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#ab32b3] to-[#4257b6]"
-                    onclick="window.location.reload()" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0, 0, 400,400">
-                    <g id="svgg">
-                        <path id="path0"
-                            d="M138.133 36.713 C 106.796 39.891,80.807 57.634,66.943 85.318 C 40.227 138.661,70.460 203.418,127.632 215.311 C 135.030 216.850,135.482 216.877,155.667 216.994 L 174.400 217.102 174.400 126.818 L 174.400 36.533 156.733 36.576 C 147.017 36.599,138.647 36.661,138.133 36.713 M200.267 36.641 C 200.267 36.700,204.448 43.990,209.560 52.841 C 214.671 61.692,231.004 89.993,245.855 115.733 C 260.707 141.473,273.005 162.689,273.185 162.879 C 273.496 163.209,284.028 145.112,340.275 47.600 C 343.236 42.467,345.895 37.877,346.184 37.400 L 346.710 36.533 273.488 36.533 C 233.216 36.533,200.267 36.582,200.267 36.641 M234.133 269.712 L 234.133 360.000 244.200 360.067 C 249.737 360.103,256.667 360.113,259.600 360.088 C 314.119 359.626,355.072 309.024,345.569 253.867 C 339.380 217.943,312.464 189.332,277.467 181.474 C 270.066 179.812,268.021 179.667,250.333 179.540 L 234.133 179.424 234.133 269.712 M113.275 262.733 C 104.112 278.610,87.762 306.936,76.942 325.679 C 66.122 344.423,57.324 359.813,57.391 359.880 C 57.457 359.946,90.263 359.971,130.291 359.934 L 203.070 359.867 174.738 310.800 C 159.155 283.813,142.788 255.463,138.367 247.800 C 133.945 240.137,130.239 233.867,130.131 233.867 C 130.023 233.867,122.438 246.857,113.275 262.733 "
-                            stroke="none" fill="none" fill-rule="evenodd"></path>
-                        <path id="path1"
-                            d="M0.000 200.000 L 0.000 400.000 200.000 400.000 L 400.000 400.000 400.000 200.000 L 400.000 0.000 200.000 0.000 L 0.000 0.000 0.000 200.000 M174.400 126.800 L 174.400 217.333 157.667 217.330 C 139.405 217.326,136.194 217.138,128.383 215.614 C 81.732 206.507,50.320 160.155,58.164 112.000 C 64.495 73.132,94.907 42.605,132.667 37.213 C 138.294 36.410,140.245 36.337,157.267 36.302 L 174.400 36.267 174.400 126.800 M346.701 36.733 C 346.562 36.990,343.848 41.700,340.670 47.200 C 337.492 52.700,321.086 81.108,304.212 110.328 C 287.338 139.549,273.440 163.399,273.328 163.330 C 273.080 163.177,276.232 168.616,234.436 96.207 C 215.496 63.395,200.000 36.485,200.000 36.407 C 200.000 36.330,233.064 36.267,273.476 36.267 C 343.371 36.267,346.940 36.289,346.701 36.733 M262.933 179.460 C 294.994 181.137,322.824 199.471,337.295 228.448 C 364.701 283.327,332.156 349.157,272.667 359.174 C 266.960 360.134,263.157 360.296,248.267 360.213 L 234.000 360.133 233.932 270.000 C 233.894 220.427,233.920 179.717,233.990 179.533 C 234.145 179.126,255.510 179.072,262.933 179.460 M133.675 239.400 C 135.509 242.590,151.902 270.990,170.105 302.511 C 188.307 334.033,203.159 359.863,203.110 359.912 C 203.061 359.961,170.179 359.971,130.038 359.934 L 57.054 359.867 76.681 325.867 C 87.475 307.167,103.873 278.757,113.121 262.733 C 122.368 246.710,130.026 233.600,130.137 233.600 C 130.249 233.600,131.841 236.210,133.675 239.400 "
-                            stroke="none" fill="#101010" fill-rule="evenodd"></path>
-                        <path id="path2"
-                            d="M148.619 36.467 C 153.433 36.507,161.233 36.507,165.953 36.467 C 170.672 36.426,166.733 36.392,157.200 36.392 C 147.667 36.392,143.805 36.426,148.619 36.467 M236.888 36.467 C 257.103 36.504,290.103 36.504,310.222 36.467 C 330.340 36.429,313.800 36.398,273.467 36.398 C 233.133 36.398,216.673 36.429,236.888 36.467 M57.129 122.400 C 57.129 122.913,57.183 123.123,57.250 122.867 C 57.318 122.610,57.318 122.190,57.250 121.933 C 57.183 121.677,57.129 121.887,57.129 122.400 M264.067 179.650 C 264.323 179.718,264.743 179.718,265.000 179.650 C 265.257 179.583,265.047 179.529,264.533 179.529 C 264.020 179.529,263.810 179.583,264.067 179.650 M148.619 217.267 C 153.433 217.307,161.233 217.307,165.953 217.267 C 170.672 217.226,166.733 217.192,157.200 217.192 C 147.667 217.192,143.805 217.226,148.619 217.267 M239.151 360.200 C 241.984 360.243,246.544 360.243,249.284 360.200 C 252.025 360.156,249.707 360.121,244.133 360.121 C 238.560 360.121,236.318 360.156,239.151 360.200 "
-                            stroke="none" fill="#8c8c8c" fill-rule="evenodd"></path>
-                        <path id="path3" d="" stroke="none" fill="#101010" fill-rule="evenodd"></path>
-                        <path id="path4"
-                            d="M233.990 179.533 C 233.920 179.717,233.894 220.427,233.932 270.000 L 234.001 360.133 234.067 269.803 L 234.133 179.472 246.333 179.400 L 258.533 179.328 246.325 179.264 C 236.756 179.214,234.089 179.272,233.990 179.533 M82.667 190.750 C 82.667 190.796,83.057 191.186,83.533 191.617 L 84.400 192.400 83.617 191.533 C 82.887 190.725,82.667 190.544,82.667 190.750 M347.028 269.733 C 347.027 271.053,347.072 271.627,347.128 271.008 C 347.184 270.389,347.185 269.309,347.130 268.608 C 347.075 267.907,347.029 268.413,347.028 269.733 "
-                            stroke="none" fill="#101010" fill-rule="evenodd"></path>
-                    </g>
-                </svg>
-            </div>
-            <div
-                class="md:fixed md:block flex gap-5 top-0 md:right-24 md:left-auto left-5 md:pt-10 pt-5 w-24 text-light z-20">
-                <!--<svg id="sun" class="mt-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-sun">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg id="moon" class="mt-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-moon">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-            <div class="bg-white w-6 h-1 my-5"></div>-->
-                <a href="https://www.instagram.com/darksimilarity/" target="_blank" aria-label="instagram">
-                    <svg class="mt-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-instagram">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
-                <a href="" target="_blank" aria-label="twitter">
-                    <svg class="mt-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-twitter">
-                        <path
-                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                        </path>
-                    </svg>
-                </a>
-                <a href="https://github.com/DarkSimilarity" target="_blank" aria-label="github">
-                    <svg class="mt-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-github">
-                        <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <canvas id="background" class="fixed z-[-1]"></canvas>
     </div>
 
+    <canvas id="background" class="fixed z-[-1] w-screen"></canvas>
+
     <!-- Scripts -->
+    <script src="js/magic_mouse-1.2.1.cdn.min.js"></script>
     <script src="js/please-wait.min.js"></script>
     <script src="js/three.min.js"></script>
     <script src="js/simplex-noise.min.js"></script>

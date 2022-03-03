@@ -1,9 +1,22 @@
 var loading_screen = pleaseWait({
-    backgroundColor: '#1abc9c',
+    backgroundColor: '#101010',
     loadingHtml: '<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>'
 });
 
-setTimeout(loading_screen.finish(), 1000)
+setTimeout(loading_screen.finish(), 0)
+
+options = {
+    "cursorOuter": "circle-basic",
+    "hoverEffect": "circle-move",
+    "hoverItemMove": false,
+    "defaultCursor": false,
+    "outerWidth": 30,
+    "outerHeight": 30
+};
+magicMouse(options);
+
+//document.getElementById('astro').addEventListener('click', e => {window.location = 'https://astroweather-darksimilarity.netlify.app/'})
+
 
 
 App({
@@ -12,16 +25,16 @@ App({
 
 function App(conf) {
     conf = {
-        fov: 75,
-        cameraZ: 75,
+        fov: 60, //75,
+        cameraZ: 100, //75,
         xyCoef: 50,
-        zCoef: 10,
-        lightIntensity: 0.9,
+        zCoef: 4, //10,
+        lightIntensity: 0.5,
         ambientColor: 0xab32b3,
-        light1Color: 0x888132,
-        light2Color: 0x6c096e,
-        light3Color: 0x7c07f9,
-        light4Color: 0x4257b6,
+        light1Color: 0x212121, //0x7b06b8,
+        light2Color: 0x6C757D, //0x407c79,
+        light3Color: 0x495057, //0x3e8057,
+        light4Color: 0x343A40, //0x16a5de,
         ...conf
     };
 
@@ -63,15 +76,11 @@ function App(conf) {
         });
 
         initScene();
-        initGui();
+        //initGui();
         animate();
     }
 
-    function initGui() {
-        document.getElementById('trigger').addEventListener('click', e => {
-            updateLightsColors();
-        });
-    }
+    // function initGui() {document.getElementById('trigger').addEventListener('click', e => {updateLightsColors();});}
 
     function initScene() {
         scene = new THREE.Scene();
@@ -89,7 +98,7 @@ function App(conf) {
 
         plane.rotation.x = -Math.PI / 2 - 0.2;
         plane.position.y = -25;
-        camera.position.z = 60;
+        camera.position.z = 40; //60;
     }
 
     function initLights() {
@@ -180,79 +189,4 @@ function App(conf) {
         const width = height * cam.aspect;
         return [width, height];
     }
-
-    // Colour changing on scroll
-    const element = document.getElementById('main')
-
-    element.addEventListener("scroll", (event) => {
-        const ih = window.innerHeight
-        const av = 100
-        const sp = element.scrollTop
-        const icon = document.getElementById('svg')
-
-        if (ih > sp) {
-            conf.light1Color = "#ab32b3"
-            conf.light2Color = "#888132"
-            conf.light3Color = "#7c07f9"
-            conf.light4Color = "#4257b6"
-            light1.color = new THREE.Color(conf.light1Color);
-            light2.color = new THREE.Color(conf.light2Color);
-            light3.color = new THREE.Color(conf.light3Color);
-            light4.color = new THREE.Color(conf.light4Color);
-
-            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#ab32b3] to-[#4257b6]')
-        }
-
-        if (sp >= ih - av) {
-            conf.light1Color = "#7b06b8"
-            conf.light2Color = "#407c79"
-            conf.light3Color = "#3e8057"
-            conf.light4Color = "#16a5de"
-            light1.color = new THREE.Color(conf.light1Color);
-            light2.color = new THREE.Color(conf.light2Color);
-            light3.color = new THREE.Color(conf.light3Color);
-            light4.color = new THREE.Color(conf.light4Color);
-
-            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#8E54E9] to-[#4776E6]')
-        }
-
-        if (sp >= ih * 2 - av) {
-            conf.light1Color = "#8bf760"
-            conf.light2Color = "#d1221d"
-            conf.light3Color = "#363c34"
-            conf.light4Color = "#d50189"
-            light1.color = new THREE.Color(conf.light1Color);
-            light2.color = new THREE.Color(conf.light2Color);
-            light3.color = new THREE.Color(conf.light3Color);
-            light4.color = new THREE.Color(conf.light4Color);
-
-            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#ff9966] to-[#ff5e62]')
-        }
-
-        if (sp >= ih * 3 - av) {
-            conf.light1Color = "#9c1000"
-            conf.light2Color = "#d11f4c"
-            conf.light3Color = "#e711ac"
-            conf.light4Color = "#cdaf12"
-            light1.color = new THREE.Color(conf.light1Color);
-            light2.color = new THREE.Color(conf.light2Color);
-            light3.color = new THREE.Color(conf.light3Color);
-            light4.color = new THREE.Color(conf.light4Color);
-
-            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#9c1000] to-[#d11f4c]')
-        }
-
-        if (sp >= ih * 4 - av) {
-            conf.light1Color = "#200454"
-            conf.light2Color = "#5b720b"
-            conf.light3Color = "#1f927f"
-            conf.light4Color = "#559368"
-            light1.color = new THREE.Color(conf.light1Color);
-            light2.color = new THREE.Color(conf.light2Color);
-            light3.color = new THREE.Color(conf.light3Color);
-            light4.color = new THREE.Color(conf.light4Color);
-
-            icon.setAttribute('class', 'w-12 h-12 cursor-pointer bg-gradient-to-tr from-[#67B26F] to-[#4ca2cd]')
-        }
-    });
 }
