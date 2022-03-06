@@ -42,31 +42,15 @@ function mousemove(event) {
         position = 0.6
     }
 
-    var lcol = document.getElementById('lcol')
-    var rcol = document.getElementById('rcol')
+    var main = document.getElementById('main')
     var mouse = document.getElementById('magicPointer')
-
-    if (event.pageX < document.body.clientWidth / 2) {
-        rcol.style.transform = `translateX(${0}px) translateY(${0}px)`;
 
         const x = ((window.innerWidth - event.pageX * position) / 90) - 7;
         const y = ((window.innerHeight - event.pageY * position) / 90) - 4;
 
         console.log(x, y)
 
-        lcol.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        mouse.style.background = 'white'
-    } else {
-        lcol.style.transform = `translateX(${0}px) translateY(${0}px)`;
-
-        const x = ((window.innerWidth + event.pageX * position) / 100) - 27;
-        const y = ((window.innerHeight + event.pageY * position) / 100) - 15;
-
-        console.log(window.innerHeight, event.pageY, position, y)
-
-        rcol.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        mouse.style.background = 'rgb(59 130 246)'
-    }
+        main.style.transform = `translateX(${x}px) translateY(${y}px)`;
 }
 
 App({

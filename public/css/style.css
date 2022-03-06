@@ -562,10 +562,6 @@ body.pg-loaded>.inner {
   display: none;
 }
 
-.pointer-events-none{
-  pointer-events: none;
-}
-
 .visible{
   visibility: visible;
 }
@@ -608,10 +604,6 @@ body.pg-loaded>.inner {
 
 .z-\[-1\]{
   z-index: -1;
-}
-
-.z-\[15\]{
-  z-index: 15;
 }
 
 .z-20{
@@ -723,10 +715,6 @@ body.pg-loaded>.inner {
 
 .w-12{
   width: 3rem;
-}
-
-.w-1\/2{
-  width: 50%;
 }
 
 .w-\[200px\]{
