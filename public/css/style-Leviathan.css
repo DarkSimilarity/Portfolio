@@ -846,10 +846,6 @@ body.pg-loaded>.inner {
   border-radius: 0.75rem;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .border-2{
   border-width: 2px;
 }
@@ -1013,11 +1009,6 @@ body.pg-loaded>.inner {
   line-height: 1.75rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -1161,36 +1152,6 @@ body.pg-loaded>.inner {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
-.hover\:text-cyan-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(6 182 212 / var(--tw-text-opacity));
-}
-
-.hover\:text-blue-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.hover\:text-green-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
-}
-
-.hover\:text-emerald-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(16 185 129 / var(--tw-text-opacity));
-}
-
-.hover\:text-yellow-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
-.hover\:text-red-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
 @media (min-width: 768px){
   .md\:bg-split {
     background-image: linear-gradient(to right, #101010, #101010 50%, #1a1a1a 50%);
@@ -1296,32 +1257,6 @@ body.pg-loaded>.inner {
 }
 
 @media (min-width: 1024px){
-  .lg\:bg-split {
-    background-image: linear-gradient(to right, #101010, #101010 50%, #1a1a1a 50%);
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-  }
-
-  .lg\:fixed{
-    position: fixed;
-  }
-
-  .lg\:absolute{
-    position: absolute;
-  }
-
-  .lg\:w-1\/2{
-    width: 50%;
-  }
-
-  .lg\:max-w-2xl{
-    max-width: 42rem;
-  }
-
-  .lg\:flex-row{
-    flex-direction: row;
-  }
-
   .lg\:p-16{
     padding: 4rem;
   }

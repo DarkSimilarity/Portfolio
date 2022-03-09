@@ -48,8 +48,6 @@ function mousemove(event) {
         const x = ((window.innerWidth - event.pageX * position) / 90) - 7;
         const y = ((window.innerHeight - event.pageY * position) / 90) - 4;
 
-        console.log(x, y)
-
         main.style.transform = `translateX(${x}px) translateY(${y}px)`;
 }
 
