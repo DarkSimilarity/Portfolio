@@ -5,7 +5,9 @@ console.log('hey bitch')
 function l() {
     var a = document.getElementsByClassName('syllable').innerText
 
-    a.addEventListener('change', (event) => {
+    a.addEventListener('change', bitch);
+
+    function bitch() {
         var h = 0
 
         while (h == 0) {
@@ -16,5 +18,5 @@ function l() {
                 }
             })
         }
-    });
+    }
 }
