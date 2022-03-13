@@ -2,7 +2,7 @@ var words = ["aardvark", "aardwolf", "aaron", "aback", "abacus", "abaft", "abalo
 
 console.log('hey bitch')
 
-function l(d) = {
+function l(d) {
     var h = 0
 
     while (h == 0) {
