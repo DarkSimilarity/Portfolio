@@ -2,15 +2,19 @@ var words = ["aardvark", "aardwolf", "aaron", "aback", "abacus", "abaft", "abalo
 
 console.log('hey bitch')
 
-function l(d) {
-    var h = 0
+function l() {
+    var a = document.getElementsByClassName('syllable').innerText
 
-    while (h == 0) {
-        words.map(x => {
-            if (x.includes(d)) {
-                console.log(x)
-                h += 1
-            }
-        })
-    }
+    a.addEventListener('change', (event) => {
+        var h = 0
+
+        while (h == 0) {
+            words.map(x => {
+                if (x.includes(d)) {
+                    console.log(x)
+                    h += 1
+                }
+            })
+        }
+    });
 }
