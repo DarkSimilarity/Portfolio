@@ -4,7 +4,7 @@ var loading_screen = pleaseWait({
     loadingHtml: '<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>'
 });
 
-setTimeout(loading_screen.finish(), 0)
+setTimeout(loading_screen.finish(), 600)
 
 resize(0)
 

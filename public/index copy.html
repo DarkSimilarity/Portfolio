@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="The portfolio of DarkSimilarity. Shows information about him, his ecperience, projects and a way to contact him">
+        content="Freelancer  |  Frontend Developer  |  I build and design modern websites that provide an amazing experience.">
     <link rel="icon" href="icons/icon.png" type="image/png">
     <link rel="apple-touch-icon" href="icons/icon.png">
     <title>DarkSimilarity Portfolio</title>
@@ -15,142 +15,264 @@
     <script src="js/mixpanel.js"></script>
 </head>
 
-<body class="md:bg-split bg-black overflow-y-hidden overflow-x-hidden">
-    <div class="inner">
-        <div class="absolute bg-white/50 bottom-0 w-screen h-[20%]"></div>
-        <div id="main"
-            class="absolute left-0 top-0 w-[100vw] max-h-screen snap snap-y overflow-x-hidden snap-mandatory block z-10 overflow-y-scroll">
-            <div class="hidden">
-                <form style="width: 80%; margin: 0 auto;">
-                    <div class="form-row">
-                        <div class="form-group col-sm-6">
-                            <label for="noiseInput" class="form-label">Noise Coef</label>
-                            <input type="range" min="1" max="100" class="custom-range" id="noiseInput">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="heightInput" class="form-label">Height Coef</label>
-                            <input type="range" min="1" max="100" class="custom-range" id="heightInput">
-                        </div>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <a href="#" id="trigger" class="btn btn-sm btn-secondary">Random Colors</a>
-                    </div>
-                </form>
-            </div>
+<body class="lg:bg-split bg-black text-light overflow-x-hidden inner">
+    <div class="w-screen max-h-screen absolute z-10">
+        <div id="main" class="w-screen md:max-w-[1440px] mx-auto flex flex-col lg:flex-row relative">
+            <div class="lg:w-1/2 md:p-12 lg:p-16 p-8 lg:fixed lg:max-w-2xl">
+                <div class="mb-5 mt-5 md:mt-0">
+                    <img alt="logo" src="icons/icon-flat.png" class="w-12 h-12 cursor-pointer"
+                        onclick="window.location.reload()">
+                    </img>
+                </div>
 
-            <div class="w-screen md:h-[80%)] bg-orange-400 overflow-y-scroll flex justify-center">
-                <div class="max-w-7xl h-full w-full mx-auto">
-                    <div class="md:grid grid-cols-2 grid-flow-col">
-                        <div class="md:p-16 p-8">
-                            <div class="">
-                                <div class="mb-5">
-                                    <img src="icons/icon.png" class="w-12 h-12 cursor-pointer"
-                                        onclick="window.location.reload()">
-                                    </img>
-                                </div>
-    
-                                <div>
-                                    <span class="text-blue-400">Hey, my name is</span>
-                                    <h1 class="md:text-5xl text-4xl text-light font-bold mb-4">DarkSimliarity</h1>
-                                    <p class="text-neutral-500 text-sm mb-4">I’m a web developer and UX architect. My
-                                        superpower?
-                                        I create digital magic. Although I have been programming for over 6 years, I mostly
-                                        created personal projects so now I'm focusing on creating portfolio projects.</p>
-                                    <p class="text-neutral-500 text-sm">Besides programming, I am also a web designer. I
-                                        mainly create modern designs, ones that keep up with today's standards
-                                        and look visually appealing while also providing function.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="md:p-16 p-8">
-                            <div class="">
-                                <h2 class="text-light text-2xl font-medium mb-5">Projects</h2>
-                                <div id="astro" target="_blank" class="bg-dark w-full p-5 hover:bg-[#212121] transition">
-                                    <h3 class="text-light text-2xl mb-2">AstroWeather</h3>
-                                    <p class="text-neutral-500 text-xs">AstroWeather is my first public project. It’s a
-                                        web weather app built using
-                                        Tailwind CSS and makes use of a weather api for data. The app is mobile-friendly
-                                        and supports both Celsius and Fahrenheit aswell as kph and mph.</p>
-                                    <div class="flex flex-grow gap-2 mt-4">
-                                        <div class="bg-yellow-500 py-1 px-2 text-xs rounded-md">JavaScript</div>
-                                        <div class="bg-blue-500 py-1 px-2 text-xs rounded-md">TailwindCSS</div>
-                                        <div class="bg-fuchsia-500 py-1 px-2 text-xs rounded-md">API</div>
-                                    </div>
-                                </div>
-                                <div id="astro" target="_blank" class="bg-dark w-full p-5 hover:bg-[#212121] transition">
-                                    <h3 class="text-light text-2xl mb-2">AstroWeather</h3>
-                                    <p class="text-neutral-500 text-xs">AstroWeather is my first public project. It’s a
-                                        web weather app built using
-                                        Tailwind CSS and makes use of a weather api for data. The app is mobile-friendly
-                                        and supports both Celsius and Fahrenheit aswell as kph and mph.</p>
-                                    <div class="flex flex-grow gap-2 mt-4">
-                                        <div class="bg-yellow-500 py-1 px-2 text-xs rounded-md">JavaScript</div>
-                                        <div class="bg-blue-500 py-1 px-2 text-xs rounded-md">TailwindCSS</div>
-                                        <div class="bg-fuchsia-500 py-1 px-2 text-xs rounded-md">API</div>
-                                    </div>
-                                </div>
-                                <div id="astro" target="_blank" class="bg-dark w-full p-5 hover:bg-[#212121] transition">
-                                    <h3 class="text-light text-2xl mb-2">AstroWeather</h3>
-                                    <p class="text-neutral-500 text-xs">AstroWeather is my first public project. It’s a
-                                        web weather app built using
-                                        Tailwind CSS and makes use of a weather api for data. The app is mobile-friendly
-                                        and supports both Celsius and Fahrenheit aswell as kph and mph.</p>
-                                    <div class="flex flex-grow gap-2 mt-4">
-                                        <div class="bg-yellow-500 py-1 px-2 text-xs rounded-md">JavaScript</div>
-                                        <div class="bg-blue-500 py-1 px-2 text-xs rounded-md">TailwindCSS</div>
-                                        <div class="bg-fuchsia-500 py-1 px-2 text-xs rounded-md">API</div>
-                                    </div>
-                                </div>
-                                <div id="astro" target="_blank" class="bg-dark w-full p-5 hover:bg-[#212121] transition">
-                                    <h3 class="text-light text-2xl mb-2">AstroWeather</h3>
-                                    <p class="text-neutral-500 text-xs">AstroWeather is my first public project. It’s a
-                                        web weather app built using
-                                        Tailwind CSS and makes use of a weather api for data. The app is mobile-friendly
-                                        and supports both Celsius and Fahrenheit aswell as kph and mph.</p>
-                                    <div class="flex flex-grow gap-2 mt-4">
-                                        <div class="bg-yellow-500 py-1 px-2 text-xs rounded-md">JavaScript</div>
-                                        <div class="bg-blue-500 py-1 px-2 text-xs rounded-md">TailwindCSS</div>
-                                        <div class="bg-fuchsia-500 py-1 px-2 text-xs rounded-md">API</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h2 class="text-light text-2xl font-medium mb-5">Contact</h2>
-                                <div class="flex flex-wrap gap-5 text-center">
-                                    <a href="https://www.linkedin.com/in/tanvir-bhachu-6109581ba/" target="_blank" class="flex-1">
-                                        <div class="bg-dark p-5 py-10 hover:bg-[#212121] transition cursor-pointer">
-                                            <h3 class="text-light text-xl">Twitter</h3>
-                                        </div>
-                                    </a>
-                                    <a href="https://twitter.com/DarkSimilarity" target="_blank" class="flex-1">
-                                        <div class="bg-dark p-5 py-10 hover:bg-[#212121] transition cursor-pointer">
-                                            <h3 class="text-light text-xl">Instagram</h3>
-                                        </div>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/tanvir-bhachu-6109581ba/" target="_blank" class=" flex-1">
-                                        <div class="bg-dark p-5 py-10 hover:bg-[#212121] transition cursor-pointer">
-                                            <h3 class="text-light text-xl">LinkedIn</h3>
-                                        </div>
-                                    </a>
-                                    <a href="https://github.com/DarkSimilarity" target="_blank" class="flex-1">
-                                        <div class="bg-dark p-5 py-10 hover:bg-[#212121] transition cursor-pointer">
-                                            <h3 class="text-light text-xl">GitHub</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="mb-10">
+                    <span class="text-blue-400">Hey, my name is</span>
+                    <h1 class="md:text-5xl text-4xl font-bold mb-4">DarkSimliarity</h1>
+                    <p class="text-neutral-400 mb-4 text-base">I’m a web developer and UX architect. My
+                        superpower?
+                        I create digital magic. Although I have been programming for over 6 years, I mostly
+                        created personal projects so now I'm focusing on creating portfolio projects.</p>
+                    <p class="text-neutral-400 text-base">Besides programming, I am also a web designer. I
+                        mainly create modern designs, ones that keep up with today's standards
+                        and look visually appealing while also providing function.</p>
+                </div>
+                <div class="mb-10">
+                    <h2 class="text-2xl font-medium mb-5">My Skills</h2>
+                    <div class="grid grid-cols-2 gap-4 max-w-xs text-neutral-400">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="cursor-none flex gap-2 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>JavaScript</span>
+                        </a>
+                        <a href="https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces" target="_blank" class="cursor-none flex gap-2 hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>APIs</span>
+                        </a>
+                        <a href="https://tailwindcss.com/" target="_blank" class="cursor-none flex gap-2 hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>TailwindCSS</span>
+                        </a>
+                        <a href="https://nodejs.org/en/" target="_blank" class="cursor-none flex gap-2 hover:text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>NodeJS</span>
+                        </a>
+                        <a href="https://www.mongodb.com/" target="_blank" class="cursor-none flex gap-2 hover:text-emerald-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>MongoDB</span>
+                        </a>
+                        <a href="https://www.netlify.com/" target="_blank" class="cursor-none flex gap-2 hover:text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>Netlify</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <h2 class="text-2xl font-medium mb-5">Skills in Progress</h2>
+                    <div class="grid grid-cols-2 gap-4 max-w-xs text-neutral-400">
+                        <a href="https://reactjs.org/" target="_blank" class="cursor-none flex gap-2 hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>React</span>
+                        </a>
+                        <a href="https://moralis.io/" target="_blank" class="cursor-none flex gap-2 hover:text-emerald-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                            <span>Moralis</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-medium mb-5">Socials</h2>
+                    <div class="flex flex-row gap-2 max-w-xs text-neutral-400">
+                        <a aria-label="Instagram" target="_blank" href="https://www.instagram.com/darksimilarity/"
+                            class="bg-[#212121] p-3 rounded-xl transition-all hover:scale-105 border-transparent border-2 hover:border-fuchsia-500 cursor-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-instagram">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a aria-label="Twitter" target="_blank" href="https://twitter.com/DarkSimilarity"
+                            class="bg-[#212121] p-3 rounded-xl transition-all hover:scale-105 border-transparent border-2 hover:border-blue-500 cursor-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-twitter">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a aria-label="LinkedIn" target="_blank"
+                            href="https://www.linkedin.com/in/tanvir-bhachu-6109581ba/"
+                            class="bg-[#212121] p-3 rounded-xl transition-all hover:scale-105 border-transparent border-2 hover:border-yellow-500 cursor-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a aria-label="GitHub" target="_blank" href="https://github.com/DarkSimilarity"
+                            class="bg-[#212121] p-3 rounded-xl transition-all hover:scale-105 border-transparent border-2 hover:border-red-500 cursor-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-github">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="lg:w-1/2 md:p-16 p-8 lg:absolute right-0">
+                <div class="flex flex-col gap-4">
+                    <div class="mb-10">
+                        <h2 class="text-2xl font-medium mb-5">My Skills</h2>
+                        <div class="grid grid-cols-3 text-neutral-400">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 transition hover:text-yellow-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>JavaScript</span>
+                            </a>
+                            <a href="https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-red-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>REST APIs</span>
+                            </a>
+                            <a href="https://www.sanity.io/" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-orange-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>Sanity CMS</span>
+                            </a>
+                            <a href="https://tailwindcss.com/" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-blue-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>TailwindCSS</span>
+                            </a>
+                            <a href="https://nodejs.org/en/" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-green-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>NodeJS</span>
+                            </a>
+                            <a href="https://www.mongodb.com/" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-emerald-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>MongoDB</span>
+                            </a>
+                            <a href="https://www.netlify.com/" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-cyan-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>Netlify</span>
+                            </a>
+                            <a href="https://vercel.com/home" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-purple-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>Vercel</span>
+                            </a>
+                            <a href="https://reactjs.org/" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-blue-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>React</span>
+                            </a>
+                            <a href="https://nextjs.org/" target="_blank" class="p-2 magic-hover magic-hover__square cursor-none flex gap-2 hover:text-blue-500 border-blue-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-corner-down-right">
+                                    <polyline points="15 10 20 15 15 20" />
+                                    <path d="M4 4v7a4 4 0 0 0 4 4h12" /></svg>
+                                <span>Next js</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl font-medium mb-5">Projects</h2>
+                    <a href="https://astroweather-darksimilarity.netlify.app/" target="_blank"
+                        class="cursor-none bg-dark w-full p-5 hover:bg-[#212121] rounded-xl transition hover:scale-105 border-transparent border-2 hover:border-blue-500">
+                        <h3 class="text-2xl mb-2">AstroWeather</h3>
+                        <p class="text-neutral-400 text-sm">AstroWeather is my first public project. It’s a
+                            web weather app built using
+                            Tailwind CSS and makes use of a weather api for data. The app is mobile-friendly
+                            and supports both Celsius and Fahrenheit aswell as kph and mph.</p>
+                        <div class="flex flex-wrap flex-grow gap-2 mt-4">
+                            <div class="bg-blue-500 text-dark py-1 px-2 text-sm rounded-md">TailwindCSS
+                            </div>
+                            <div class="bg-yellow-500 text-dark py-1 px-2 text-sm rounded-md">JavaScript
+                            </div>
+                            <div class="bg-fuchsia-500 text-dark py-1 px-2 text-sm rounded-md">API</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <!--<canvas id="background" class="fixed z-[-1]"></canvas>-->
     </div>
 
+    <canvas id="background" class="fixed z-[-1] w-screen"></canvas>
+
     <!-- Scripts -->
+    <script src="js/magic_mouse-1.2.1.cdn.min.js"></script>
     <script src="js/please-wait.min.js"></script>
-    <script src="js/three.min.js"></script>
+    <script src="js/three-r97.min.js"></script>
     <script src="js/simplex-noise.min.js"></script>
     <script src="js/chroma.min.js"></script>
     <script src="js/custom.js"></script>
